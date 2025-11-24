@@ -1,0 +1,38 @@
+.carousel-caption {
+  bottom: 20px; /* lo sube un poco para que no tape la imagen */
+}
+
+.carousel-caption h4 {
+  font-size: 2rem; /* tamaño normal en desktop */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption h4 {
+    font-size: 1.2rem; /* más pequeño en móviles */
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  .carousel-caption button {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+  }
+}
+.carousel-caption {
+  top: 50%;                /* baja el bloque al centro */
+  transform: translateY(-50%);  /* lo centra verticalmente */
+  bottom: auto;            /* evita que se pegue abajo */
+}
+
+.shadow-outline {
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black; /* sombras en cada dirección */
+}
